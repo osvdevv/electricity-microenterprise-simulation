@@ -25,26 +25,26 @@ public class Proyecto {
     }
 
     public void iniciarproyecto() {
-        this.estadoP = "EN_PROCESO"; // [cite: 327]
-        tecnico.asignar(); // El técnico ahora está ocupado [cite: 327]
+        this.estadoP = "EN_PROCESO"; 
+        tecnico.asignar(); 
     }
 
     public void finalizarproyecto() {
-        this.estadoP = "TERMINADO"; // [cite: 328]
-        tecnico.liberar(); // El técnico queda libre para otro servicio [cite: 328]
+        this.estadoP = "TERMINADO";  
+        tecnico.liberar(); 
     }
 
     public void cancelarproyecto() {
-        this.estadoP = "CANCELADO"; // [cite: 329]
-        tecnico.liberar(); // [cite: 329]
+        this.estadoP = "CANCELADO"; 
+        tecnico.liberar(); 
     }
 
     public double obtenerSaldopendiente() {
-        return costoTotalP - totalPagadoP; // [cite: 326]
+        return costoTotalP - totalPagadoP; 
     }
 
     public void registrarpago(double monto) {
-        this.totalPagadoP += monto; // [cite: 325]
+        this.totalPagadoP += monto; 
     }
 
     public int getIdProyecto() { return idProyecto; }
